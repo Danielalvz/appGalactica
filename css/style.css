@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;500;700&family=Castoro+Titling&family=Chakra+Petch&family=Kaushan+Script&family=Mohave:wght@500&family=Raleway:wght@200;300;500;600&family=Righteous&family=Roboto&family=Russo+One&family=Satisfy&family=Vina+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+
+.marca {
+    width: 100%;
+    height: 174px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.marca img {
+    width: 40px;
+}
+
+.marca h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 2.4em;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.navMenu a{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Checkbox */
+header i {
+    font-size: 2em;
+}
+
+.barBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/**/
+
+header nav ul {
+    width: 80%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4em;
+    cursor: pointer;
+    font-size: 0.8em;
+    background-color: rgb(4, 22, 37);  
+}
+
+
+header a {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
+header a:hover {
+    color: #6176c18b;
+}
+
+/* MAIN */
+
+main {
+    width: 80%;
+    margin: 0 10%;
+    background-color: #d8dae085;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    justify-content: center;
+}
+
+main img{
+    border-radius: 1em;
+}
+
+h2, h3 {
+    font-size: 1.2em;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+}
+.noticias{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+}
+
+
+.noticias div, a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+main h4{
+    font-size: 2em;
+    letter-spacing: 0.2em;
+}
+
+.noticias h2 {
+    padding: 2em;
+}
+.noticias div {
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius: 1.5em;
+}
+
+.noticias a{
+    color: black;
+}
+
+.noticias a:hover{
+    color: rgb(46, 68, 120);
+}
+
+.noticias img {
+    width: 300px;
+}
+
+/* Main contenido */
+.articulo {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.parrafoArticulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: justify;
+}
+
+.parrafoArticulos p {
+    padding: 10px;
+    line-height: 1.8;
+}
+
+.parrafoArticulos img {
+    max-width: 600px;
+}
+
+.autorArticulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.autorArticulo p {
+    text-align: left;
+    line-height: 0.5;
+}
+
+/* FOOTER */
+footer {
+    width: 80%;
+    margin: 0 10%;
+    height: 200px;
+    background-color: rgb(40, 34, 86);
+    position: relative;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background: url('../img/galaxia.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* HEADER */
+
+    header nav {
+        padding-bottom: 20px;
+        
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        position: absolute;
+        top: 280px;
+        left: -100%;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        background-color: rgba(50, 74, 77, 0);
+        
+    }
+
+    header nav ul li {
+        padding: 20px 0;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        background-color: rgba(50, 74, 77, 0.96);
+    }
+
+    header nav ul li:hover {
+        background-color: rgba(11, 41, 48, 0.436);
+    }
+
+    header nav ul li:active {
+        background-color: rgba(11, 41, 48, 0.205);
+    }
+
+    header a:hover {
+        color: white;
+    }
+
+    /* Checkbox */
+    .barBtn {
+        display: flex;
+    }
+
+    #check:checked~.navMenu {
+        left: 0;
+    }
+
+    /**/
+
+    /* MAIN*/
+
+    main, footer {
+        width: 100%;
+        margin: 0;
+    }
+
+    main img {
+        max-width: 80%;
+    }
+
+    .noticias div, a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        border: none;
+    }
+    .noticias img {
+        max-width: 80%;
+    }
+
+    .parrafoArticulos img {
+        max-width: 80%;
+    }
+
+    .autorArticulo p {
+        line-height: 1;
+    }
+
+    /* FOOTER */
+
+    footer .marca{
+        font-size: 0.8em;
+    }
+}
