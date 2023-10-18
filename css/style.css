@@ -160,6 +160,10 @@ main h4{
     gap: 30px;
 }
 
+.articulo img{
+    max-width: 80%;
+}
+
 
 .parrafoArticulos {
     display: flex;
