@@ -148,6 +148,9 @@ main h4{
     width: 300px;
 }
 
+.noticiasSecundarias a{
+    cursor: none;
+}
 /* Main contenido */
 .articulo {
     padding: 100px 0;
